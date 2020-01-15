@@ -1,0 +1,22 @@
+* {
+    font-family: "Halvetia", sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background: ghostwhite;
+    color: dodgerblue;
+    margin-top: 40px;
+}
+
+.tasklist {
+    
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
