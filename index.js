@@ -11,6 +11,10 @@ let task = []
 
 let complete = []
 
+app.get("/", function(req, res) {
+    res.render("index", {task: task, complete : complete, title: 'Simple To Do App' })
+}) 
+
 app.post("/addtask", function(req,res) {
     console.log(req.body)
     let newTask = req.body.newtask
@@ -35,9 +39,6 @@ app.post("/removetask", function(req, res) {
     
 })
 
-app.get("/", function(req, res) {
-    res.render("index", {task: task, complete : complete})
-}) 
 
 app.listen(1500, function() {
     console.log("Server is running on port 1500")
